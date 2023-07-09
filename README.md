@@ -1,9 +1,9 @@
 # erm-git docker-mediastack
 
-## Forked From EZARR
-[EZARR](https://github.com/Luctia/ezarr)
+Forked From EZARR
+- [EZARR](https://github.com/Luctia/ezarr)
 
-
+## docker-mediastack
 
 - [Sonarr](https://sonarr.tv/) is an application to manage TV shows. It is capable of keeping track
   of what you'd like to watch, at what quality, in which language and more, and can find a place to
