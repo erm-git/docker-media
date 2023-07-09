@@ -6,7 +6,7 @@ Forked From EZARR
 ## docker-mediastack
 - Proxmox Host,
   - Debian LXC Guest
-  -  running Docker
+    -  running Docker
 
 ### Manage Media
 - [Sonarr](https://sonarr.tv/) 
