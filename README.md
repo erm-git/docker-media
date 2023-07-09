@@ -5,7 +5,7 @@ Forked From EZARR
 
 ## docker-mediastack
 - Proxmox Host,
- - Debian LXC Guest
+  - Debian LXC Guest
   -  running Docker
 
 ### Manage Media
