@@ -4,11 +4,13 @@ Forked From EZARR
 # erm-git docker-mediastack
 
 ## docker-mediastack
-- Proxmox Host,
-  - Debian LXC Guest
-    -  running Docker
+- Proxmox Debian Unprivaleged LXC running Docker.
+- Media and Torrent data stored on ZFS Pool "tank" on Proxmox host.
+- ZFS pool mounted on proxmox host
+- Using uid/gid bindmounts 1000:1000 to mount zfs pool on LXC guests
+- Using Hardlinks for "Atomic Moves"
 
-### Manage Media
+### Manage/View Media
 - [Sonarr](https://sonarr.tv/) 
 - [Radarr](https://radarr.video/) 
 - [Lidarr](https://lidarr.audio/) 
@@ -16,10 +18,6 @@ Forked From EZARR
 - [Mylar3](https://github.com/mylar3/mylar3) 
 - [Audiobookshelf](https://www.audiobookshelf.org/)
 - [Prowlarr](https://wiki.servarr.com/prowlarr) **Note**: When adding an indexer, set the "seed ratio" to 1.
-
-### Download Clients
-- [qBittorrent](https://www.qbittorrent.org/)
-- [Private Internet Access](https://www.privateinternetaccess.com/) using [pia-wg](https://github.com/triffid/pia-wg) scripts **Note**: Need to figure out how to include these scripts in the qbittorrent image/container so that qBittorrent traffice only uses the PIA network interface. For now I have natively installed qBittorent on the docker-mediastack host LXC.
 - [PleX](https://www.plex.tv/) is a mediaserver. Using this, you get access to a Netflix-like
   interface across many devices like your laptop or computer, your phone, your TV and more. For
   some features, you need a [PleX pass](https://www.plex.tv/nl/plex-pass/).
@@ -27,6 +25,11 @@ Forked From EZARR
   what has been watched, who watched it, when and where they watched it, and how it was watched.
 - [Overseerr](https://overseerr.dev/) is a show and movie request management and media discovery
    tool.
+
+### Download Clients (not using docker for now)
+- [qBittorrent](https://www.qbittorrent.org/)
+- [Private Internet Access](https://www.privateinternetaccess.com/) using [pia-wg](https://github.com/triffid/pia-wg) scripts **Note**: Need to figure out how to include these scripts in the qbittorrent image/container so that qBittorrent traffice only uses the PIA network interface. For now I have natively installed qBittorent on another LXC.
+
 
 ## Using
 ### Using the CLI
