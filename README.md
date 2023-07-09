@@ -1,7 +1,7 @@
 # erm-git docker-mediastack
 
 ## Forked From EZARR
-- [EZARR](https://github.com/Luctia/ezarr)
+[EZARR](https://github.com/Luctia/ezarr)
 
 
 
